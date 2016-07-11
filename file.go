@@ -40,12 +40,12 @@ func (f *File) Base() string {
 }
 
 // for setting the last part of the directory which we just call collection
-func (f *File) setCollection(collection string) {
+func (f *File) SetCollection(collection string) {
 	f.dirParts[len(f.dirParts)-1] = collection
 }
 
 // setting the Extension for whatever the filetype suggests
-func (f *File) setExtension(extension string) {
+func (f *File) SetExtension(extension string) {
 	f.extension = extension
 }
 
