@@ -7,8 +7,8 @@ import (
 func TestBasic(t *testing.T) {
 	filename := "/tmp/test/test2/test.txt"
 	f := NewFromPath(filename)
-	f.setCollection("test3")
-	f.setExtension(".html")
+	f.SetCollection("test3")
+	f.SetExtension(".html")
 	if f.Path() != "/tmp/test/test3/test.html" {
 		t.FailNow()
 	}
